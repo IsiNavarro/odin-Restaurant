@@ -1,0 +1,112 @@
+:root {
+    --night: rgba(0, 0, 0, 0.8);
+    --khaki: #c8b29c;
+    --eerie: #1f1d11;
+    --russet: #8d512c;
+
+    --transition-time: 100ms;
+}
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', serif;
+}
+#content    {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1.5fr 0.5fr 8fr  0.7fr ;
+    background-image: url("jason-leung.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--khaki);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;  
+    background-color: var(--night);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+main {
+    display: grid;
+    grid-template: 1fr / 1fr;
+}
+#main-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 2em;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    padding: 1em;
+}
+#leftPic {
+    background-image: url(jay-wennington.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: 1 / 1 / 3 / 2;
+}
+#leftPic2 {
+    background-image: url(jonathan-borba.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: 1 / 1 / 3 / 2;
+}
+#leftPic3 {
+    background-image: url(spencer-davis.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: 1 / 1 / 3 / 2;
+}
+h3 {
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#text {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 1.2em;
+    white-space: pre-line;
+}
+button {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 30px;
+    width: 150px;
+    border-radius: 2px;
+    font-size: 1.3em;
+    transition: var(--transition-time);
+    color: var(--khaki);
+}
+button:hover {
+    cursor: pointer;
+    border-bottom: 1px var(--russet) solid;
+    transition: var(--transition-time);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--night);
+    color: var(--khaki);
+}
+a {
+    color: var(--khaki);
+    text-decoration: none;
+}
